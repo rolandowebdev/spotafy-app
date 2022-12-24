@@ -1,7 +1,13 @@
+import { Routes, Route } from 'react-router-dom';
+
+import { Discover } from './pages';
+
 function App() {
   return (
     <div>
-      <h1>Vite + React</h1>
+      <Routes>
+        <Route path="/" element={<Discover />} />
+      </Routes>
     </div>
   );
 }
